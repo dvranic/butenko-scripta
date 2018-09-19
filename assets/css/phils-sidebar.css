@@ -1,0 +1,83 @@
+ul.phils-menu {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    min-width: 220px;
+    position: fixed;
+    height: 100%; 
+    left:0;
+    top:0;
+    z-index:1100;
+    overflow: auto;
+    list-style-type: none;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.31);
+    background-color: #f1f1f1;
+    display: none;
+}
+.phils-sidebar .mHover + ul.phils-menu {
+    display: block;
+}
+.phils-menu ul{
+	list-style-type: none;
+	padding-left:0;
+}
+.phils-menu ul.sub-menu li a{
+	padding-left:25px;
+}
+.phils-menu li a {
+    display: block;
+    color: #333;
+    padding: 8px 40px 8px 16px;
+        font-size: 12px;
+    border-top: 1px solid #d8d8d8;
+}
+.phils-menu li a:hover {
+    background-color: #333;
+    color: white;
+}
+#phils-burger {
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1100;
+    display: hidden;
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+    margin:25px;
+    background: #ffffff url(../images/burger.png) no-repeat center;
+    background-size: 28px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.20);
+}
+#phils-l-arrow{
+    position: relative;
+    z-index: 100;
+    width: 40px;
+    height: 40px;
+    border-radius: 20%;
+    border:3px solid #FFFFFF;
+    margin:25px;
+    background: #bfbfbf url(../images/l-arrow.png) no-repeat center;
+    background-size: 28px;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.31);
+    float:right;
+    padding:0;
+    top:-100px;
+    display: none;
+}
+
+    .phils-first-item {
+        position: fixed;
+        left:300px;
+        width:auto;
+        display: inline;
+    }
+    #phils-burger:hover + ul.phils-menu:not(.mHover),
+    #phils-burger:active + ul.phils-menu:not(.mHover),
+    ul.phils-menu:not(.mHover):hover {
+        display: block;
+    }
+    #phils-l-arrow:focus + ul.phils-menu,
+    #phils-l-arrow:active + ul.phils-menu {
+        display: none;
+    }

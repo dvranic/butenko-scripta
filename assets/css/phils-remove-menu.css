@@ -1,0 +1,9 @@
+/* 
+Code to remove menu from current theme. 
+This way when you deactivate the plugin the Theme reverts back to the default menu
+
+#nav_menu-2,
+nav {
+	display: none !important;
+} 
+*/
